@@ -7,18 +7,18 @@
   body {
     padding: 0px;
     margin: 0px;
+    user-select: none;
   }
   .container {
-    background-color: red;
-    height: 100vh;
+    background-image: url('assets/background.jpg');
+    background-size: cover;
   }
   .cover-container {
     width: 100%;
     height:100vw;
-    max-height: 60%;
+    max-height: 60vh;
     display: flex;
     justify-content: center;
-    background-color: black;
   }
   .cover-container .cover {
     background-image: url('assets/cover.jpg');
@@ -28,12 +28,136 @@
     height: 100%;
     width: 100%;
   }
+  .social-container {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-box {
+    height: 4vh;
+    width: 4vh;
+    margin: 0px 1vh 0px  1vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .platforms-container {
+    /*background-color: black;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .platform-box {
+    height: 8vh;
+    width: 100%;
+    max-width: 60vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-color: rgb(100, 100, 100);
+    border-style: solid;
+    border-width:2px 2px 0px 2px;
+    -webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .platform-box:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .platform-image {
+    margin-left: 5%;
+    height: 80%;
+    max-width: 40%;
+  }
+  .platform-image.toobig {
+    max-width: 30%;
+  }
+  .platform-arrow {
+    height: 60%;
+    margin-right: 5%;
+  }
+  .link {
+    width:100%;
+    display: contents;
+  }
 </style>
 <body>
   <div class="container">
     <div class="cover-container">
       <div class="cover"></div>
     </div>
+    <div class="social-container">
+      <a href="https://www.instagram.com/indiair2020/">
+        <div class="social-box" style="background-image: url('assets/instagram.png')"></div>
+      </a>
+      <a href="https://www.facebook.com/indiair2020/">
+        <div class="social-box" style="background-image: url('assets/facebook.png')"></div>
+      </a>
+      <a href="https://www.youtube.com/channel/UCaA2vWqm-rVW9zA7lts-2uQ">
+        <div class="social-box" style="background-image: url('assets/youtube.png')"></div>
+      </a>
+      <a href="https://twitter.com/indiair2020">
+        <div class="social-box" style="background-image: url('assets/twitter.png')"></div>
+      </a>
+    </div>
+    <div class="platforms-container">
+      <a href="https://open.spotify.com/artist/5iNVchrg9ISixW4o7JMaN5?si=AClvK0FlTR2WxrnO4BEwDg" class="link">
+        <div class="platform-box">
+          <img class="platform-image" src="assets/spotify.svg">
+          <img class="platform-arrow" src="assets/next.svg">
+        </div>
+      </a>
+      <a href="https://music.apple.com/it/artist/indi-air/1507782435" class="link">
+        <div class="platform-box">
+          <img class="platform-image" src="assets/applemusic.svg">
+          <img class="platform-arrow" src="assets/next.svg">
+        </div>
+      </a>
+      <a href="https://music.amazon.it/albums/B0872JCY74?ref=dm_sh_c30b-9319-dmcp-1a61-c5086&musicTerritory=IT&marketplaceId=APJ6JRA9NG5V4" class="link">
+        <div class="platform-box">
+          <img class="platform-image toobig" src="assets/amazon.svg">
+          <img class="platform-arrow" src="assets/next.svg">
+        </div>
+      </a>
+      <a href="https://music.apple.com/it/artist/indi-air/1507782435" class="link">
+        <div class="platform-box">
+          <img class="platform-image" src="assets/itunes.svg">
+          <img class="platform-arrow" src="assets/next.svg">
+        </div>
+      </a>
+      <a href="https://store.tidal.com/it/album/137330340" class="link">
+        <div class="platform-box">
+          <img class="platform-image" src="assets/tidal.svg">
+          <img class="platform-arrow" src="assets/next.svg">
+        </div>
+      </a>
+      <a href="https://www.deezer.com/album/141606612?utm_source=deezer&utm_content=album-141606612&utm_term=1594241022_1589926329&utm_medium=web" class="link">
+        <div class="platform-box">
+          <img class="platform-image toobig" src="assets/deezer.svg">
+          <img class="platform-arrow" src="assets/next.svg">
+        </div>
+      </a>
+      <a href="https://play.google.com/store/music/album/Indi_Air_2_2?id=Bc47wrxgzs7ykr7tr6e5zd6c6ne" class="link">
+        <div class="platform-box">
+          <img class="platform-image" src="assets/googleplay.svg">
+          <img class="platform-arrow" src="assets/next.svg">
+        </div>
+      </a>
+      <a href="https://us.napster.com/artist/indi-air/album/22-468528090" class="link">
+        <div class="platform-box">
+          <img class="platform-image" src="assets/napster.svg">
+          <img class="platform-arrow" src="assets/next.svg">
+        </div>
+      </a>
+      <a href="https://www.youtube.com/playlist?list=PL_ia2Q5ixISYQ9z5_2mcMENAOXL32JAL3" class="link">
+        <div class="platform-box">
+          <img class="platform-image" src="assets/youtube.svg">
+          <img class="platform-arrow" src="assets/next.svg">
+        </div>
+    </a></
+    div>
   </div>
 </body>
 </html>
